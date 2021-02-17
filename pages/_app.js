@@ -141,6 +141,9 @@ class OpenCollectiveFrontendApp extends App {
             </StripeProviderSSR>
           </ThemeProvider>
         </ApolloProvider>
+        {/** TODO move these scripts */}
+        <script src="https://js.braintreegateway.com/web/dropin/1.26.0/js/dropin.min.js"></script>
+        <script src="https://js.braintreegateway.com/web/3.71.0/js/data-collector.min.js"></script>
         {Object.keys(scripts).map(key => (
           <script key={key} type="text/javascript" src={scripts[key]} />
         ))}
