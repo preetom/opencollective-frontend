@@ -76,6 +76,7 @@ const hostDashboardExpensesQuery = gqlV2/* GraphQL */ `
           stats {
             balance {
               valueInCents
+              currency
             }
           }
         }
